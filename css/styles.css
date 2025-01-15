@@ -29,7 +29,8 @@ a {
   height: 3rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
+  display: none;
 }
 
 .menu-btn span {
@@ -61,8 +62,21 @@ a {
   /* position: fixed;
   top: 0;
   left: 0; */
+  display: none;
 }
 
+#side-drawer:target {
+  display: block;
+}
+
+#side-drawer header {
+  display: flex;
+  height: 5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 5%;
+}
 #side-drawer ul {
   list-style: none;
   margin: 0;
@@ -123,6 +137,9 @@ main h1 {
   text-align: center;
 }
 
+.food-item h2 {
+  margin: 0 0 1rem 0;
+}
 .btn {
   background-color: rgb(228, 157, 44);
   color: white;
@@ -137,7 +154,9 @@ main h1 {
   #main-header nav {
     display: none;
   }
-
+  .menu-btn {
+    display: flex;
+  }
   main h1 {
     font-size: 1.5rem;
   }
